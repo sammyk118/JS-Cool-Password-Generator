@@ -72,7 +72,6 @@ function generatePassword() {
     password.push(masterArray[char]);
     console.log(password)
   }
-  
   //join array into a string
   password = password.join('');
 }
