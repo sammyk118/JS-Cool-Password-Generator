@@ -11,7 +11,7 @@ This project is about using Javascript to make an in-browser password generator.
 
 [Website](https://sammyk118.github.io/JS-Cool-Password-Generator/)
 
-
+![Screenshot](./Images/Capture.PNG)
 ## What I did
 - I filled out the JavaScript to ask about password specifications, whic involved creating an empty masterArray[] and pushing specific arrays into that based on user input.
 ```javascript
