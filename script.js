@@ -52,7 +52,7 @@ function getPasswordChars() {
 function getPasswordLength() {
   passwordLength = prompt("Desired password length?");
   console.log("Password length: ", passwordLength);
-  if (typeof passwordLength ==! 'number')
+  if (typeof passwordLength !== 'number')
     alert("Please enter a number");
 
   else if (passwordLength < 8 || passwordLength > 128)
