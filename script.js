@@ -50,9 +50,9 @@ function getPasswordChars() {
 }
 
 function getPasswordLength() {
-  passwordLength = prompt("Desired password length?");
+  passwordLength = parseInt(prompt("Desired password length?"));
   console.log("Password length: ", passwordLength);
-  if (typeof passwordLength !== 'number')
+  if (isNaN(passwordLength))
     alert("Please enter a number");
 
   else if (passwordLength < 8 || passwordLength > 128)
@@ -68,9 +68,9 @@ function getRandomInt(max) {
 
 function generatePassword() {
   for (var i = 0; i < passwordLength; i++) {
-    var char = getRandomInt(masterArray.length - 1);
+    var char = getRandomInt(masterArray.length);
     password.push(masterArray[char]);
-    console.log(password)
+    // console.log(password)
   }
   //join array into a string
   password = password.join('');
